@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+
+ 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Form Validation</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="../assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/libs/css/style.css">
+    <link rel="stylesheet" href="../assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+</head>
+<style>
+    #validationCustomUsername
+    {
+        width: 39px !important;
+    }
+</style>
+<body>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+         <!-- ============================================================== -->
+        <!-- navbar -->
+        <!-- ============================================================== -->
+         <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" style="font-size: 25px;" href="../index.html">Smart Tendering Platform</a>
+            
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-right-top">
+                        <li class="nav-item">
+                            <a href="../pages/data-tables.html" class="nav-link nav-icons" >Home</a>
+                        </li>
+                        <li class="nav-item dropdown notification">
+                            <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span class="indicator"></span></a>
+                            <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
+                                <li>
+                                    <div class="notification-title"> Notification</div>
+                                    <div class="notification-list">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action active">
+                                                
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img src="../assets/images/avatar-4.jpg" alt="" class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span class="notification-list-user-name">Wapda</span> has published a new tender
+                                                        <div class="notification-date">2 min ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img src="../assets/images/avatar-5.jpg" alt="" class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span class="notification-list-user-name">PEPCO</span>has published a new tender
+                                                        <div class="notification-date">2 min ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-footer"> <a href="#">View all notifications</a></div>
+                                </li>
+                            </ul>
+                        </li>
+                                             <li class="nav-item dropdown nav-user">
+                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle"></a>
+                            <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
+                                <div class="nav-user-info">
+                                    <a href="./User Profile.html">
+                                        <h5 class="mb-0 text-white nav-user-name">
+                                            Fatima Muzaffar</h5>
+                                                                                <span class="status"></span><span class="ml-2" style="color: black;">View Profile</span>
+                                                                            </div>
+                                                                            
+                                    </a>
+                                    <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                                </div>
+                                
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end navbar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- left sidebar -->
+        <!-- ============================================================== -->
+        <div class="nav-left-sidebar sidebar-dark">
+            <div class="menu-list" style="background-color: white;">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="d-xl-none d-lg-none" href="#">User Profile</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-divider" style="font-size: 18px; color: black; margin: 10px;">
+                                Profile
+                            </li>
+                            <li>
+                                <a style="background-color: white; color: gray; font-size: 16px;" class="nav-link active" href="./personal_details.html"><i class="fa fa-fw fa-user-circle"></i>Personal Details</a>
+                            </li>
+                            <a style="background-color: white; color: gray; font-size: 16px;" class="nav-link active" href="./company_details.html"><i class="fa fa-fw fa-user-circle"></i>Company Details</a>
+                            <a style="background-color: white; color: gray; font-size: 16px;" class="nav-link active" href="./interset_details.html"><i class="fa fa-fw fa-user-circle"></i>Interest Details</a>
+                            <a style="background-color: white; color: gray; font-size: 16px;" class="nav-link active" href="./pricing.html"><i class="fa fa-fw fa-user-circle"></i>Bookmarked Tenders</a>
+                            <a style="background-color: white; color: gray; font-size: 16px;" class="nav-link active" href="./pricing.html"><i class="fa fa-fw fa-user-circle"></i>Tenders History</a>
+                            <a style="background-color: white; color: gray; font-size: 16px;" class="nav-link active" href="./payment history.html"><i class="fa fa-fw fa-user-circle"></i>Payment History</a>
+                            <a style="background-color: white; color: gray; font-size: 16px;" class="nav-link active" href="./Membership.html"><i class="fa fa-fw fa-user-circle"></i>Membership</a>
+                            <a style="background-color: white; color: gray; font-size: 16px;" class="nav-link active" href="./pricing.html"><i class="fa fa-fw fa-user-circle"></i>Deactivate Account</a>
+                        
+                            <a id="myBtn2" style="background-color: white; color: gray; font-size: 16px;" class="nav-link active" href="#"><i class="fa fa-fw fa-user-circle"></i>Logout</a>
+                     
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end left sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- wrapper  -->
+        <!-- ============================================================== -->
+        <div class="dashboard-wrapper">
+            <div class="container-fluid  dashboard-content">
+                <!-- ============================================================== -->
+                <!-- pageheader -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="page-header">
+                            <h2 class="pageheader-title">Personal Details </h2>
+                            <p class="pageheader-text">Proin placerat ante duiullam scelerisque a velit ac porta, fusce sit amet vestibulum mi. Morbi lobortis pulvinar quam.</p>
+                            <div class="page-breadcrumb">
+                                <nav aria-label="breadcrumb">
+                                    
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- end pageheader -->
+                <!-- ============================================================== -->
+             
+                    <div class="row">
+                        <!-- ============================================================== -->
+                        <!-- validation form -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="card">
+            
+                                <div class="card-body">
+                                    <form class="needs-validation" novalidate>
+                                        <div class="row">
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                                <label for="validationCustom02">Full Name</label>
+                                                <input style="width: 50%;" type="email" class="form-control mb-3"  id="validationCustom02" placeholder="Email" value="Fatima Muzaffar" >
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                            
+                                                <label for="validationCustom01">User Name</label>
+                                                <input style="width: 50%;" type="text" class="form-control mb-3" id="validationCustom01" placeholder="User name" value="Fatima_13" disabled> 
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-0">
+                                                <label for="validationCustom02">Email</label>
+                                                <input style="width: 50%;" type="email" class="form-control mb-1"  id="validationCustom02" placeholder="Email" value="fatima13@gmail.com">
+                                            </div>
+                                            <a href="#"  id="myBtn" class="ml-3 mb-3 mt-0">Verify Email</a>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                                <label for="validationCustom02">Contact</label>
+                                                <input style="width: 50%;" type="number" class="form-control mb-1"  id="validationCustom02" placeholder="Contact No" value="03004004021">
+                                            </div>
+                                            <a href="#" id="myBtn1" class="ml-3 mb-3 mt-0">Verify Code</a>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                                <label for="validationCustom02">Change Password</label>
+                                                <input style="width: 50%;" type="password" class="form-control mb-3"  id="validationCustom02" placeholder="Enter Password">
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                                <label for="validationCustom02">Confirm Password</label>
+                                                <input style="width: 50%;" type="password" class="form-control mb-3"  id="validationCustom02" placeholder="Enter Password">
+                                            </div>
+                                            
+                                            
+                                            <button type="button" class="btn btn-secondary mt-3" style="margin-left: 20px; margin-bottom: 20px; background-color: crimson; border-radius: 10px;">Save Changes</button>
+                                            
+                                            <div id="myModal" class="modal">
+                                                <!-- Modal content -->
+                                                <div class="modal-content" style="width: 40%;">
+                                                    <span class="close" style="display: flex; justify-content: flex-end;">&times;</span>
+                                                    <h2>EMAIL CONFIRMATION</h2>
+                                                    <form>
+                                                        <div class="form-group">
+                                                          <label for="exampleInputEmail1">Enter PIN CODE</label>
+                                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                                          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                                        </div>
+                                                        <p>We have sent you a PIN CODE XXXXX on your email ID</p>
+                                                        <div class="form-group form-check">
+                                                          <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
+                                                          <!-- <label class="form-check-label" for="exampleCheck1">Check me out</label> -->
+                                                        </div>
+                                                        <a href="#">Resend Code</a>
+                                                        <!-- <button class="btn btn-success  mb-3" style="width: 20%;">Resend</button> -->
+                                                        <div style="display: flex; justify-content: center;">
+                                                            <button type="submit" class="btn btn-primary" style="width: 20%;">Verify</button>
+                                                        </div>
+                                                       
+                                                      </form>
+                                                </div>
+                                            </div>
+                                            <div id="myModal1" class="modal">
+                                                <!-- Modal content -->
+                                                <div class="modal-content" style="width: 40%;">
+                                                    <span class="close" style="display: flex; justify-content: flex-end;">&times;</span>
+                                                    <h2>PHONE.NO CONFIRMATION</h2>
+                                                    <form>
+                                                        <div class="form-group">
+                                                          <label for="exampleInputEmail1">Enter PIN CODE</label>
+                                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                                          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                                        </div>
+                                                        <p>We have sent you a PIN CODE XXXXX on your Phone Number</p>
+                                                        <div class="form-group form-check">
+                                                          <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
+                                                          <!-- <label class="form-check-label" for="exampleCheck1">Check me out</label> -->
+                                                        </div>
+                                                        <a href="#">Resend Code</a>
+                                                        <!-- <button class="btn btn-success  mb-3" style="width: 20%;">Resend</button> -->
+                                                        <div style="display: flex; justify-content: center;">
+                                                            <button type="submit" class="btn btn-primary" style="width: 20%;">Verify</button>
+                                                        </div>
+                                                       
+                                                      </form>
+                                                </div>
+                                            </div>
+                                            <div id="myModal2" class="modal">
+                                                <!-- Modal content -->
+                                                <div class="modal-content" style="width: 40%;">
+                                                    <span class="close" style="display: flex; justify-content: flex-end;">&times;</span>
+                                                    <h2>LOGOUT</h2>
+                                                    <form>
+                                                        
+                                                        <p>Are you sure you want to logout</p>
+                                                        <div class="form-group form-check">
+                                                          <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
+                                                          <!-- <label class="form-check-label" for="exampleCheck1">Check me out</label> -->
+                                                        </div>
+                                                        <!-- <a href="#">Resend Code</a> -->
+                                                        <!-- <button class="btn btn-success  mb-3" style="width: 20%;">Resend</button> -->
+                                                        <div style="display: flex; justify-content: center;">
+                                                            <button type="submit" class="btn btn-danger mr-3" style="width: 20%;">Logout</button>
+                                                            <button type="submit" class="btn btn-primary" style="width: 20%;">Cancel</button>
+                                                        </div>
+                                                       
+                                                      </form>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+
+                                        
+                                       
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end validation form -->
+                        <!-- ============================================================== -->
+                    </div>
+
+                
+                    
+    </div>
+    <!-- ============================================================== -->
+    <!-- end main wrapper -->
+    <!-- ============================================================== -->
+    <!-- Optional JavaScript -->
+    <script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="../assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    <script src="../assets/vendor/parsley/parsley.js"></script>
+    <script src="../assets/libs/js/main-js.js"></script>
+    <script>
+    $('#form').parsley();
+    </script>
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+    </script>
+     <script>
+         $(".save").click(function(){
+            $('#errorMsg').css('color','red');
+        $('#errorMsg').html('Your profile need a approval in order to Recommended Tenders<a style="color: blue;" href="#"> Send request</a>');
+});
+     
+    </script>
+<script>
+    //    popup javascript
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+   </script>
+
+<script>
+var modal1 = document.getElementById("myModal1");
+
+var btn1 = document.getElementById("myBtn1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[1];
+
+// When the user clicks on the button, open the modal
+btn1.onclick = function() {
+modal1.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal1.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal1.style.display = "none";
+}
+}
+</script>
+
+<script>
+//    popup javascript
+// Get the modal
+var modal2 = document.getElementById("myModal2");
+
+// Get the button that opens the modal
+var btn2 = document.getElementById("myBtn2");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[2];
+
+// When the user clicks on the button, open the modal
+btn2.onclick = function() {
+modal2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal2.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal2.style.display = "none";
+}
+}
+</script>
+                
+</body>
+ 
+</html>
